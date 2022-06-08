@@ -7,7 +7,9 @@ const RequireAuth = ({children}) => {
     const [user, loading, error] = useAuthState(auth);
 
     if(loading){
-        return <p>Loading...</p>;
+        return <div className='h-screen w-full flex justify-center items-center '>
+        <p>Loading...</p>
+    </div>;
     }
 
     if(!user){

@@ -17,7 +17,9 @@ const Login = () => {
     const navigate = useNavigate();
 
     if(loading || updating){
-        return <p>Loading...</p>;
+        return <div className='h-screen w-full flex justify-center items-center '>
+        <p>Loading...</p>
+    </div>;
     }
     if(user){
         navigate('/chatboard');
